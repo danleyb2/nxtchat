@@ -1,5 +1,5 @@
-# chat-wringer #
+# NXT CHAT #
 
-nodejs chat backend for wringer app
+nodejs chat backend for nxtchat app
 
 Nyaundi Brian
