@@ -5,7 +5,7 @@
   "homepage": "http://nxtchat-ndieks.rhcloud.com//chat",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node app.js --websocket-port=8000 --log-level=1",
     "test": "mocha",
     "app": "nodemon app.js"
   },
