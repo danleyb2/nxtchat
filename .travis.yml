@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - 4.0.0
+install:
+  - npm install
+script: npm test
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
+env:
+  global:
+    - CXX=g++-4.8
+deploy:
+  provider: openshift
+  user: $EMAIL
+  password: $PASSWORD
+  app: $APP_NAME
+  domain: $DOMAIN_NAME
+  on: master
